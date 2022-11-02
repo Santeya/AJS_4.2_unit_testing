@@ -1,14 +1,18 @@
-import indicateHealth from '../app';
+import compareHealth from '../app';
 
 const playersList = [
-  [{ name: 'мечник', health: 35 }, 'wounded'],
-  [{ name: 'маг', health: 100 }, 'healthy'],
-  [{ name: 'лучник', health: 10 }, 'critical'],
+  { name: 'мечник', health: 10 },
+  { name: 'маг', health: 100 },
+  { name: 'лучник', health: 80 },
 ];
 
-const handler = test.each(playersList);
+const sortedPlayersList = [
+  { name: 'маг', health: 100 },
+  { name: 'лучник', health: 80 },
+  { name: 'мечник', health: 10 },
+];
 
-handler('testing healthStatement acc to points', ({ _, health }, expected) => {
-  const result = indicateHealth({ _, health });
-  expect(result).toBe(expected);
+test('testing sorting by health', () => {
+  const result = compareHealth(playersList);
+  expect(result).toEqual(sortedPlayersList);
 });
