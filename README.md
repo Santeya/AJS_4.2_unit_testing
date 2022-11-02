@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/l9miq4qerb0qbsp0?svg=true)](https://ci.appveyor.com/project/Santeya/ajs-4-1-unit-testing)
+[![Build status](https://ci.appveyor.com/api/projects/status/y3brj8dnh9lbt54y?svg=true)](https://ci.appveyor.com/project/Santeya/ajs-4-2-unit-testing)
